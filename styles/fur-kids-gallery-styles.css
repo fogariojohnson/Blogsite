@@ -1,0 +1,73 @@
+
+.container-gallery::after {
+  content: "";
+  width: 860px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+  background: linear-gradient(to right, #efdaf1, #c170c7, #6d2c72, #2e1330) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header-gallery{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: #ff99fa;
+  background-size: cover;
+  color: #330030;
+  border-bottom: 4px solid #fdb347;
+}
+
+.nestedgallery{
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-areas:
+    "fig1 fig2 fig3"
+    "fig4 fig5 fig6"
+    "fig7 fig8 fig9";
+}
+
+.gallery {
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+#fig1{
+  grid-area: fig1;
+}
+
+#fig2{
+  grid-area: fig2;
+}
+
+figcaption{
+  text-align: center;
+  color: #b3d4fc;
+}
+
+.footer a{
+  padding: 30px;
+}

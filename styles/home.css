@@ -1,0 +1,61 @@
+title{
+  padding: 20px;
+}
+
+label{
+  display: block;
+  margin: 1rem 0;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-areas: "alpha furkids grandpups";
+  position: relative;
+  padding: 30px;
+}
+
+.card,
+.card-text{
+  font-family: Arial, serif;
+  font-size: 10pt;
+}
+
+.card{
+  border: 2px solid #555555;
+  width: 250px;
+  height: 300px;
+  margin: 1pt;
+  display: block;
+}
+
+.content img{
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  display: block;
+}
+
+button{
+  border-radius: 20px;
+  background-color: cornflowerblue;
+  display: block;
+  margin: 20px auto;
+}
+
+#alpha{
+  grid-area: alpha;
+}
+
+#furkids{
+  grid-area: furkids;
+}
+
+#grandpups{
+  grid-area: grandpups;
+}
+
+
+
+
+

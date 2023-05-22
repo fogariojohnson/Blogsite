@@ -1,0 +1,35 @@
+.content-grandpups{
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-areas: "article images";
+  grid-column-gap: 20px;
+}
+
+.grandpups{
+  grid-area: article;
+  text-align: justify;
+}
+
+.images{
+  grid-area: images;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "label label label"
+    "pup1 pup2 pup3";
+}
+
+.images img{
+  width: 200px;
+  height: 200px;
+}
+
+label{
+  grid-area: label;
+  text-align: center;
+}
+
+.images figcaption{
+  font-size: 10pt;
+}

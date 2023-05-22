@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+h1{
+  font-family: "Tangerine", cursive;
+  font-size: 75px;
+  text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+}
+
+body{
+  background: linear-gradient(to right, #efdaf1, #ad008e, #85006c, #ffadf0) no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  font-size: 15pt;
+  grid-area: sd;
+  padding: 50px;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.container{
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: 300px 300px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd content content content content content content content"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.title{
+  grid-area: hd;
+}
+
+.side-header{
+  grid-area: sd;
+}
+
+.content{
+  grid-area: content;
+}
+
+.footer{
+  grid-area: ft;
+}
+
+#box1 {
+  font-size: 10pt;
+  text-align: center;
+  margin: auto;
+  grid-area: box1;
+}
+
+#box2 img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 75px;
+}
+
+#box2{
+  grid-area: box2;
+}
+
+#box3 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 75px;
+}
+
+#box3{
+  grid-area: box3;
+}
+
+#box4{
+  font-size: 10pt;
+  text-align: center;
+  margin: auto;
+  grid-area: box4;
+}
+
+#box5{
+  font-size: 10pt;
+  text-align: center;
+  margin: auto;
+  grid-area: box5;
+}
+
+.header{
+  text-align: center;
+  grid-area: hd;
+}
+
+ul{
+  list-style: none;
+}
+
+label{
+  font-weight: bold;
+}
+
+li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a:visited{
+  color: midnightblue;
+}
+
+a:hover{
+  color: brown;
+}
+
+a:active{
+  color: #fdb347;
+}

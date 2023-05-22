@@ -1,0 +1,55 @@
+.container-contact{
+  width: 80%;
+  background-color: #ff8ffb;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+
+.established{
+  font-style: italic;
+  text-align: center;
+}
+
+section h3 img{
+  height: 100px;
+  width: 150px;
+  margin: 15px auto;
+  display: inline-flex;
+}
+
+section h3{
+  margin-top: 50px;
+}
+
+hr{
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line{
+  margin-top: 25px;
+}
+
+section h3 p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+footer{
+  font-size: 14px;
+}
+
+.address{
+  margin-bottom: 5px;
+}
+
+.contact a{
+  color: black;
+}

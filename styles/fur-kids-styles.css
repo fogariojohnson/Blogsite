@@ -1,0 +1,25 @@
+.content{
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 300px 300px 300px;
+  grid-gap: 5px;
+  padding: 10px;
+}
+
+.box{
+  width: 250px;
+  height: 250px;
+  border: 2px solid red;
+  margin: 0;
+}
+
+.content .box ul li{
+  font-size: 10pt;
+  margin: 0;
+  text-align: left;
+}
+
+.gallery{
+  position: absolute;
+  bottom: 0;
+}

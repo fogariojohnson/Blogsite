@@ -1,0 +1,17 @@
+.article{
+  display: flex;
+  grid-area: content;
+  width: 100%;
+}
+
+section{
+  margin: 0 auto;
+  font-size: 12pt;
+  font-family: Arial, serif;
+}
+
+section img{
+  height: 100px;
+  width: 100px;
+}
+

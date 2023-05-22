@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/app-form-styles.css" />
+  </head>
+  <body class="application">
+    <h1 class="application">Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='/submit-form'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="address">Enter Your Home Address: <input id="address" name="address" type="text" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="kids">Do you have kids at home?
+          <select id="kids" name="kids">
+            <option value="">(select one)</option>
+            <option value="1">Yes but they are all old enough to handle a pup</option>
+            <option value="2">Yes and we have a toddler/infant at home</option>
+            <option value="2">Yes and we have a toddler at home but well acquainted with animals</option>
+            <option value="3">No</option>
+          </select>
+        </label>
+        <label for="duration">Will the puppy be alone for a long period of time?
+          <select id="duration" name="duration">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Rarely</option>
+            <option value="4">Sometimes</option>
+          </select>
+        </label>
+        <label for="experience">Is this your first time caring for a puppy?
+          <select id="experience" name="experience">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">No, but it was such a long time since I had one</option>
+          </select>
+        </label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline"/> I accept the <a href="Health%20and%20Genetic%20Warranty.pdf">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="picture">Upload a picture of the backyard the pup can safely roam around: <input id="picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Blog</option>
+            <option value="2">Friend</option>
+            <option value="3">Facebook Group</option>
+            <option value="4">Google Search</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Why do you want to have a puppy?"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  <a href="homepage.html">Return to Homepage</a>
+  </body>
+</html>
